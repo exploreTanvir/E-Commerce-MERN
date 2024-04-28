@@ -12,4 +12,11 @@
     bottom: 0;
     margin: auto;
   }
+
+  .left {
+    left: 10px;
+  }
+  .right {
+    right: 10px;
+  }
 }

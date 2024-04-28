@@ -5,10 +5,10 @@ import "./slider.css"
 const Slider = () => {
   return (
     <div className=' slider position-relative'>
-            <div className="icons rounded-circle position-absolute ">
+            <div className="icons left rounded-circle position-absolute ">
                 <ArrowLeftOutlined/>
             </div>
-            <div className="icons rounded-circle position-absolute">
+            <div className="icons right rounded-circle position-absolute">
                 <ArrowRightOutlined/>
             </div>
     </div>
