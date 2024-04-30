@@ -1,13 +1,19 @@
 import { ShoppingCartOutlined } from '@mui/icons-material';
 import Badge from '@mui/material/Badge';
 import React from 'react';
+import logo from "../../assets/logo.png";
 import "./navbar.css";
 
 const Navbar = () => {
   return (
     <div className="container">
         <div className="wrapper align-items-center justify-content-between d-flex">
-            <div className="left col-4 d-flex align-items-center">
+          
+        <div className="center col-4 ">
+              <img src={logo} className='w-50' alt="" />
+            </div>
+
+            <div className="left col-4 d-flex align-items-center text-center justify-content-center">
               <div className="language fs-5">EN
               </div>
               <div className="searchContainer rounded p-1 ms-2 d-flex align-items-center border border-2">
@@ -15,9 +21,7 @@ const Navbar = () => {
                 <i style={{color:"gray"}} class="fs-6 fa-solid  fa-magnifying-glass"></i>
                 </div>
             </div>
-            <div className="center col-4 text-center">
-              <h3 className="logo fw-bold">MTHR</h3>
-            </div>
+            
             <div className="right d-flex  align-items-center justify-content-end col-4" style={{cursor:"pointer"}}>
               <div className="menuItem me-2">
                 register

@@ -9,7 +9,7 @@ const Catagori = () => {
     <div className='container-fluid justify-content-between d-flex p-5' >
       {
         categories.map(item=>(
-          <CatagoriItem item={item}/>
+          <CatagoriItem item={item} key={item.id}/>
         ))
       }
     </div>
