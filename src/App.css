@@ -1,0 +1,15 @@
+select {
+  padding: 5px 10px;
+  margin-right: 20px;
+  background: white;
+
+  option {
+    text-align: center;
+    background: white;
+
+    &:hover {
+      background: #41c6ff;
+      color: white;
+    }
+  }
+}

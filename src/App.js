@@ -2,12 +2,13 @@
 import React from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
-import Home from './pages/Home';
+import "./App.css";
+import ProductL from './pages/productList/ProductL';
 
 const App = () => {
   return (
     <div >
-      <Home/>
+    <ProductL/>
     </div>
   )
 }

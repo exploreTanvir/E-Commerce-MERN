@@ -1,0 +1,20 @@
+.wrapper {
+  img {
+    height: 80vh;
+    object-fit: cover;
+  }
+  .infoContainer {
+    padding: 0 50px;
+
+    .title {
+      font-weight: 200;
+    }
+    .desc {
+      margin: 20px 0px;
+    }
+    .price {
+      font-weight: 100;
+      font-size: 40px;
+    }
+  }
+}
