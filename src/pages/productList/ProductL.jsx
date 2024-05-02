@@ -1,3 +1,4 @@
+import { Add, Remove } from '@mui/icons-material'
 import AnnouncMent from '../../components/announcMent/AnnouncMent'
 import Footer from '../../components/footer/Footer'
 import Navbar from '../../components/navbar/Navbar'
@@ -6,12 +7,12 @@ import "./productL.css"
 
 const ProductL = () => {
   return (
-    <div>
+    <div className='productL'>
         <AnnouncMent/>
         <Navbar/>
         <NewSletter/>
 
-        <div className="wrapper row p-5">
+        <div className="wrapper row p-3">
             <div className="imgContainer col-6">
                 <img className='w-100' src="https://i.ibb.co/S6qMxwr/jean.jpg"  alt="" />
             </div>
@@ -28,16 +29,44 @@ const ProductL = () => {
             condimentum ac, volutpat ornare.
                 </p>
                 <span className="price">$20</span>
-                <div className="filterContainer">
-                    <div className="filter">
-                        <div className="filterTitle">
-                            
-                        </div>
-                        <div className="filterColor">
+                <div className="filterContainer d-flex justify-content-between w-50  pt-5 ">
+                    
+                    <div className="filterL">
+                        <span className="filterTitleL m-0">
+                            Color
+                        </span>
+                        <div className="filterColorL" style={{background:"black"}}></div>
+                        <div className="filterColorL" style={{background:"darkblue"}}></div>
+                        <div className="filterColorL" style={{background:"gray"}}></div>
+                    </div>
 
-                        </div>
+                    <div className="filterL">
+                        <span className="filterTitleL">
+                            Size
+                        </span>
+                        <select className="filterSizeL ">
+                            <option className="filterSizeOption">XS</option>
+                            <option className="filterSizeOption">S</option>
+                            <option className="filterSizeOption">M</option>
+                            <option className="filterSizeOption">L</option>
+                            <option className="filterSizeOption">XL</option>
+                        </select>
                     </div>
                 </div>
+
+
+
+                <div className="addContainer py-3 d-flex align-content-center w-50 justify-content-between">
+                    <div className="amountContainer  d-flex align-content-center fw-bold">
+                       <Remove/>
+                       <span className="amount">1</span>
+                       <Add/>
+                    </div>
+                    <button className="addToCart">
+                        ADD TO CART
+                </button>
+                </div>
+                
             </div>
         </div>
         <Footer/>

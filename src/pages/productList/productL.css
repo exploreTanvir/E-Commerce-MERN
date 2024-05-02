@@ -1,20 +1,61 @@
-.wrapper {
+.productL {
+  overflow: hidden;
+}
+.imgContainer {
   img {
     height: 80vh;
     object-fit: cover;
   }
-  .infoContainer {
-    padding: 0 50px;
+}
+.infoContainer {
+  padding: 0 50px;
 
-    .title {
-      font-weight: 200;
-    }
-    .desc {
-      margin: 20px 0px;
-    }
-    .price {
-      font-weight: 100;
-      font-size: 40px;
-    }
+  .title {
+    font-weight: 200;
+  }
+  .desc {
+    margin: 20px 0px;
+  }
+  .price {
+    font-weight: 100;
+    font-size: 40px;
+  }
+}
+.filterL {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filterTitleL {
+  font-size: 20px;
+  margin: 10px 5px;
+  font-weight: 200;
+}
+.filterColorL {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.amount {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px;
+}
+.addToCart {
+  border: 2px solid teal;
+  padding: 15px;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+
+  &:hover {
+    background: #dedcdc;
   }
 }

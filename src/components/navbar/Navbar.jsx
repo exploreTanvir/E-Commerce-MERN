@@ -6,11 +6,11 @@ import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="container-fluid px-4">
-        <div className="wrapper align-items-center justify-content-between d-flex">
+    <div className="container-fluid navbar px-4 d-flex align-content-center justify-content-between">
+        <div className="navWrapper align-items-center justify-content-between d-flex">
           
         <div className="center col-4 ">
-              <img className='w-50' src={logo} alt="" />
+              <img className='w-25' src={logo} alt="" />
             </div>
 
             <div className="left col-4 d-flex align-items-center text-center justify-content-center">

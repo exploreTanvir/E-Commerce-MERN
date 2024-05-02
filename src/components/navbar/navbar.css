@@ -1,8 +1,9 @@
-.container {
-  height: 50px;
+.navbar {
+  height: 60px;
   /* background: #000; */
-  
-  .wrapper {
+
+  .navWrapper {
     padding: 5px 20px;
+    width: 100%;
   }
 }
