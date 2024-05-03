@@ -17,8 +17,8 @@ const ProductL = () => {
                 <img className='w-100' src="https://i.ibb.co/S6qMxwr/jean.jpg"  alt="" />
             </div>
 
-            <div className="infoContainer  col-6">
-                <h1 className="title">
+            <div className="infoContainer col-6">
+                <h1 className="title  mt-5">
                 Denim Jumpsuit
                 </h1>
                 <p className="desc">
@@ -56,8 +56,8 @@ const ProductL = () => {
 
 
 
-                <div className="addContainer py-3 d-flex align-content-center w-50 justify-content-between">
-                    <div className="amountContainer  d-flex align-content-center fw-bold">
+                <div className="addContainer py-3 d-flex align-items-center w-50 justify-content-between">
+                    <div className="amountContainer  d-flex align-items-center fw-bold">
                        <Remove/>
                        <span className="amount">1</span>
                        <Add/>

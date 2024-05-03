@@ -1,0 +1,42 @@
+.register {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../../assets/register.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+
+    input {
+      flex: 1;
+      min-width: 40%;
+      margin: 20px 10px 0 0;
+      padding: 10px;
+    }
+
+    .agreement {
+      font-size: 14px;
+      margin: 20px 7px;
+    }
+    button {
+      width: 40%;
+      border: none;
+      padding: 15px 20px;
+      background: teal;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
