@@ -21,7 +21,7 @@ const Cart = () => {
 
                 <button className="topButton p-3 event-pointer fw-bold text-white border-0 rounded-2" style={{background:"black"}}>CHECKOUT NOW</button>
             </div>
-            <div className="bottom  d-flex justify-content-between align-items-center">
+            <div className="bottom col-sm-12 d-flex justify-content-between align-items-center">
                 <div className="info">
                     <div className="product d-flex justify-content-between align-items-center">
                         <div className="productDetail d-flex">
