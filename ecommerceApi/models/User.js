@@ -4,7 +4,7 @@ const mongoose=require("mongoose")
 //create schema
 const UserSchema=new mongoose.Schema(
 {
-    userName:{
+    username:{
         type:String,
         required:true,
         unique:true
@@ -19,7 +19,7 @@ const UserSchema=new mongoose.Schema(
         required:true
     },
     isAdmin:{
-        type:boolean,
+        type:Boolean,
         default:false
     },
     createdAt:{
