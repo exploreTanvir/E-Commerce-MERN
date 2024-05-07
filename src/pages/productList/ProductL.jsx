@@ -10,7 +10,7 @@ const ProductL = () => {
     <div className='productL'>
         <AnnouncMent/>
         <Navbar/>
-        <NewSletter/>
+
 
         <div className="wrapper row p-3">
             <div className="imgContainer col-6">
@@ -69,6 +69,7 @@ const ProductL = () => {
                 
             </div>
         </div>
+        <NewSletter/>
         <Footer/>
     </div>
   )

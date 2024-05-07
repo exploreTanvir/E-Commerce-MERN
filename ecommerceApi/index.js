@@ -25,6 +25,6 @@ app.use("/api/order", orderRoute);
 
 
 // APP LISTENING
-app.listen(process.env.PORT||3000,()=>{
+app.listen(process.env.PORT||3003,()=>{
     console.log("server is running on the port nb 3000")
 })

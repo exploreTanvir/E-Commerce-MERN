@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useLocation } from "react-router"
 import AnnouncMent from '../components/announcMent/AnnouncMent'
 import Footer from '../components/footer/Footer'
 import Navbar from '../components/navbar/Navbar'
@@ -6,6 +7,18 @@ import NewSletter from '../components/newSletter/NewSletter'
 import Products from '../components/products/Products'
 
 const Plist = () => {
+  const location=useLocation()
+  const cat=location.pathname.split("/")[2]
+  const [filters,setfilters]=useState({})
+  const [sort,setSort]=useState("newest")
+
+  const handlefilters=(e)=>{
+      const value=e.target.value;
+      setfilters({
+        ...filters,
+        [e.target.name]:value
+      })
+  }
   return (
     <div>
       <AnnouncMent/>
@@ -14,14 +27,14 @@ const Plist = () => {
         <h1 className="title">
           Dresses
         </h1>
-        <div className="filterContainer d-flex justify-content-between">
+        <div className="filtersContainer d-flex justify-content-between">
 
-          <div className="filter m-3">
-            <span className="filterText me-3 fs-5 fw-bold">
-              Filter Products :
+          <div className="filters m-3">
+            <span className="filtersText me-3 fs-5 fw-bold">
+              filters Products :
             </span>
-            <select name="" id="" className="select">
-              <option disabled selected>Color</option>
+            <select name="color" onChange={handlefilters} className="select">
+              <option disabled>Color</option>
               <option>White</option>
               <option>Black</option>
               <option>Red</option>
@@ -30,8 +43,8 @@ const Plist = () => {
               <option>Green</option>
             </select>
 
-            <select className="select">
-              <option disabled selected>Size</option>
+            <select className="select" name="size" onChange={handlefilters}>
+              <option disabled>Size</option>
               <option className='text-center'>XS</option>
               <option>S</option>
               <option>M</option>
@@ -39,17 +52,17 @@ const Plist = () => {
               <option>XL</option>
             </select>
           </div>
-          <div className="filter m-3"><span className="filterText me-3 fs-5 fw-bold">
+          <div className="filters m-3"><span className="filtersText me-3 fs-5 fw-bold">
               Sort Products :
             </span>
-            <select name="" id="" className="select">
-              <option disabled selected>Newest</option>
-              <option value="">Price (asc)</option>
-              <option value="">Price (desc)</option>
+            <select onChange={e=>setSort(e.target.value)} className="select">
+              <option value="newest">Newest</option>
+              <option value="asc">Price (asc)</option>
+              <option value="desc">Price (desc)</option>
             </select>
             </div>
         </div>
-        <Products/>
+        <Products cat={cat} filters={filters} sort={sort}/>
         <NewSletter/>
         <Footer/>
     </div>
