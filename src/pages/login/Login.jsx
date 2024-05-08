@@ -10,8 +10,8 @@ const Login = () => {
             <input type="text" placeholder="Password"/>
             
         <button className="border-0 text-white mb-3 rounded-2 pointer-event">LOGIN</button>
-        <a href="">DO YOU NOT REMEMBER THE PARSSWORD?</a>
-        <a href="">CREATE A NEW ACCOUNT.</a>
+        <a href="/">DO YOU NOT REMEMBER THE PARSSWORD?</a>
+        <a href="/">CREATE A NEW ACCOUNT.</a>
         </form>
     </div>
 </div>

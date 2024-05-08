@@ -1,4 +1,5 @@
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "@mui/icons-material"
+import { Link } from "react-router-dom"
 import "./product.css"
 
 const Product = ({item}) => {
@@ -15,7 +16,9 @@ const Product = ({item}) => {
                 <ShoppingCartOutlined/>
             </div>
             <div className="icons">
+            <Link to={`/product/${item._id}`}>
                 <SearchOutlined/>
+                </Link>
             </div>
             <div className="icons">
                 <FavoriteBorderOutlined/>

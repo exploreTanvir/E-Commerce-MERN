@@ -1,10 +1,12 @@
 import { ShoppingCartOutlined } from '@mui/icons-material';
 import Badge from '@mui/material/Badge';
 import React from 'react';
+import { useSelector } from 'react-redux';
 import logo from "../../assets/logo.png";
 import "./navbar.css";
 
 const Navbar = () => {
+  const quantity=useSelector(state=>state.cart.quantity)
   return (
     <div className="container-fluid navbar px-4 d-flex align-items-center justify-content-between">
         <div className="navWrapper align-items-center justify-content-between d-flex">
@@ -30,7 +32,7 @@ const Navbar = () => {
                 sing in
               </div>
               <div className="menuItem">
-              <Badge badgeContent={5} color="primary">
+              <Badge badgeContent={quantity} color="primary">
         <ShoppingCartOutlined/> 
       </Badge>
               </div>

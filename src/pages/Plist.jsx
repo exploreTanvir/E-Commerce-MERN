@@ -25,7 +25,7 @@ const Plist = () => {
         <Navbar/>
 
         <h1 className="title">
-          Dresses
+          {cat}
         </h1>
         <div className="filtersContainer d-flex justify-content-between">
 
@@ -35,12 +35,12 @@ const Plist = () => {
             </span>
             <select name="color" onChange={handlefilters} className="select">
               <option disabled>Color</option>
-              <option>White</option>
-              <option>Black</option>
-              <option>Red</option>
-              <option>Blue</option>
-              <option>Yellow</option>
-              <option>Green</option>
+              <option>white</option>
+              <option>black</option>
+              <option>red</option>
+              <option>blue</option>
+              <option>yellow</option>
+              <option>green</option>
             </select>
 
             <select className="select" name="size" onChange={handlefilters}>

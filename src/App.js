@@ -37,6 +37,10 @@ const App = () => {
         {user?<Redirect to="/" />:<Register/>}
 
         </Route>
+        <Route exact path="/plist">
+        <Plist/>
+
+        </Route>
         
       </Switch>
     </Router>

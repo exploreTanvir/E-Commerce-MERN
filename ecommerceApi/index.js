@@ -19,12 +19,12 @@ mongoose.connect(process.env.MONGO_URL).then(()=>console.log("DB Connection Succ
 //API END POINT
 app.use("/api/auth", authRoute);
 app.use("/api/user", userRoute);
-app.use("/api/product", productRoute);
+app.use("/api/products", productRoute);
 app.use("/api/cart", cartRoute);
 app.use("/api/order", orderRoute);
 
 
 // APP LISTENING
-app.listen(process.env.PORT||3003,()=>{
-    console.log("server is running on the port nb 3000")
+app.listen(3003,()=>{
+    console.log("server is running on the port nb 3003")
 })
