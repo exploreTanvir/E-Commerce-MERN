@@ -14,32 +14,35 @@ import ProductL from './pages/productList/ProductL';
 import Register from './pages/register/Register';
 
 const App = () => {
- const user=true
+ const user=false
   return (
     <Router>
       <Switch>
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/products/:category">
+        <Route path="/products/:category">
           <Plist />
         </Route>
-        <Route exact path="/product/:id">
+        <Route path="/product/:id">
           <ProductL />
         </Route>
-        <Route exact path="/carts">
+        <Route path="/cart">
           <Cart />
         </Route>
-        <Route exact path="/login">
+        <Route path="/login">
           {user?<Redirect to="/" />:<Login/>}
         </Route>
-        <Route exact path="/register">
+        <Route path="/register">
         {user?<Redirect to="/" />:<Register/>}
 
         </Route>
-        <Route exact path="/plist">
+        <Route path="/plist">
         <Plist/>
 
+        </Route>
+        <Route path="/plist">
+        <Plist/>
         </Route>
         
       </Switch>

@@ -33,11 +33,17 @@
       color: white;
       cursor: pointer;
       text-align: center;
+
+      &:disabled {
+        color: green;
+        cursor: not-allowed;
+      }
     }
     a {
       margin: 5px 0;
       font-size: 12px;
       color: rgb(85, 85, 85) !important;
     }
+    
   }
 }

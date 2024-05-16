@@ -52,7 +52,7 @@ hr {
     justify-content: space-between;
   }
   button {
-    background: teal;
+    background: rgb(0, 0, 0);
     color: white;
   }
 }

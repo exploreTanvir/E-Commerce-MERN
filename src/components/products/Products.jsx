@@ -11,7 +11,7 @@ const Products = ({cat,filters,sort}) => {
       const getProducts=async()=>{
         try {
           const res=await axios.get(cat?`http://localhost:3003/api/products?category=${cat}`:"http://localhost:3003/api/products")
-          setProducts(res.data)
+          setProducts(res.data) 
         } catch (error) {          
         }
       }
@@ -50,7 +50,7 @@ const Products = ({cat,filters,sort}) => {
     <div className="Products justify-content-between d-flex p-5">
         {
            cat? filteredProduct.map(item=>(
-                <Product item={item} key={item.id}/>
+                <Product key={item.id}/>
             )): products.slice(0,8).map(item=>(
               <Product item={item} key={item.id}/>
           ))
