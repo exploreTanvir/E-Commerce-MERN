@@ -16,7 +16,7 @@ const Slider = () => {
     <div className="containers overflow-hidden  d-flex">
       <div className=' slider position-relative '>
             <div onClick={()=>handleClick("left")} className="icons left rounded-circle position-absolute " direction="left">
-                <ArrowLeftOutlined/>
+                <ArrowLeftOutlined/>  
             </div>
 
             <div className="wrapper d-flex" style={{ transform: `translateX(-${slide * 100}vw)` }} slide={slide}>
