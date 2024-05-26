@@ -16,7 +16,7 @@ const Product = ({item}) => {
                 <ShoppingCartOutlined/>
             </div>
             <div className="icons">
-            <Link to={`/product/${item.id}`}>
+            <Link to={`/products`}>
                 <SearchOutlined/>
                 </Link>
             </div>
