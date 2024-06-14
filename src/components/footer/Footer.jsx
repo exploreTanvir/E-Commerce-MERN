@@ -71,7 +71,7 @@ const Footer = () => {
             Contact
           </h3>
           <div className="contentItem">
-         <Room className="me-2"/> 622 Dixie Path , South Tobinchester 98336
+         <Room className="me-2"/> 622 Dixie Path , South Tobinchester 983366
           </div>
           <div className="contentItem">
           <Phone className="me-2"/> +1 234 56 78
